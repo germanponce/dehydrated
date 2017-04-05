@@ -72,3 +72,7 @@ Parameters:
  --challenge (-t) http-01|dns-01  Which challenge should be used? Currently http-01 and dns-01 are supported
  --algo (-a) rsa|prime256v1|secp384r1 Which public key algorithm should be used? Supported: rsa, prime256v1 and secp384r1
 ```
+
+Ejemplo:
+
+./dehydrated --cron --domain my.domain.example.com --hook ./hook.route53.rb --challenge dns-01
